@@ -1,2 +1,2 @@
 # sparkWithScalaWorld
-Spark/Scala & Streaming programs for Intermediate/Beginner Level
+Spark/Scala & Streaming programs - Intermediate/Beginner Level
