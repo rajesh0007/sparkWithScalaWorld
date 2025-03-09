@@ -27,6 +27,7 @@ object SparkStreamingConsumeKafka {
     val groupCount = df.select(explode(split(df("value")," ")).alias("word"))
       .groupBy("word").count()
 
+    //prints data in console. we can also use "Kafka,parquet,memory,ForeachBatch,Foreach,File"
     groupCount.writeStream
       .format("console")
       .outputMode("complete")
